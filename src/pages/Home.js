@@ -9,7 +9,7 @@ function Home() {
   return (
     <div>
       <Hero>
-        <Banner title="Luxorias Cars" subtitle="Cars like family">
+        <Banner title="Luxurious Cars" subtitle="Cars like family">
           <Link to="/cars" className="btn-primary">
             Our Cars
           </Link>
