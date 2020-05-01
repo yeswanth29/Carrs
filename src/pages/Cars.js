@@ -8,7 +8,7 @@ function Rooms() {
   return (
     <div>
       <Hero hero="roomsHero">
-        <Banner title="Our Rooms">
+        <Banner title="Our Cars">
           <Link to="/" className="btn-primary">
             Home
           </Link>
