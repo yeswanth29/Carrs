@@ -1,8 +1,8 @@
 import React from "react";
 import Home from "./pages/Home";
-import Room from "./pages/Rooms";
+import Car from "./pages/Cars";
 import SingleRoom from "./pages/SingleRoom";
-
+import Form from "./pages/Form";
 import Navbar from "./components/Navbar";
 import Error from "./pages/Error";
 import { Route, Switch } from "react-router-dom";
@@ -14,9 +14,9 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/Rooms" component={Room} />
+        <Route exact path="/Cars" component={Car} />
         <Route exact path="/Rooms/:slug" component={SingleRoom} />
-        <Route component={Error} />
+        <Route exact path="/Form" component={Form} />
       </Switch>
     </div>
   );

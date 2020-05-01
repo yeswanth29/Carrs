@@ -3,7 +3,7 @@ import { RoomContext } from "../context";
 import Loading from "./Loading";
 import Title from "./Title";
 import Room from "./Room";
-class RoomsAll extends Component {
+class FeaturedCars extends Component {
   static contextType = RoomContext;
   render() {
     let {
@@ -16,8 +16,8 @@ class RoomsAll extends Component {
     });
 
     return (
-      <section className="featured-rooms">
-        <Title title="Featured Rooms"></Title>
+      <section className="featured-Cars">
+        <Title title="Featured Cars"></Title>
         <div className="featured-rooms-center">
           {loading ? <Loading /> : rooms}
         </div>
@@ -26,4 +26,4 @@ class RoomsAll extends Component {
   }
 }
 
-export default RoomsAll;
+export default FeaturedCars;

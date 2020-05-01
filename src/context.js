@@ -42,32 +42,6 @@ export class RoomProvider extends Component {
     });
   }
 
-  // getData = async () => {
-  //   try {
-  //     let response = await Client.getEntries({
-  //       content_type: "beachResortRoom",
-  //     });
-  //     let rooms = this.formatData(response.items);
-
-  //     let featuredRooms = rooms.filter((room) => room.featured === true);
-  //     //
-  //     let maxPrice = Math.max(...rooms.map((item) => item.price));
-  //     let maxSize = Math.max(...rooms.map((item) => item.size));
-  //     console.log(response.items);
-  //     this.setState({
-  //       rooms,
-  //       featuredRooms,
-  //       sortedRooms: rooms,
-  //       loading: false,
-  //       //
-  //       price: maxPrice,
-  //       maxPrice,
-  //       maxSize,
-  //     });
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
   formatData(items) {
     let tempitems = items.map((item) => {
       let id = item.sys.id;

@@ -14,18 +14,12 @@ class RoomsAll extends Component {
     rooms = rooms.map((room) => {
       return <Room key={room.id} room={room} />;
     });
-    nonrooms = nonrooms.map((room) => {
-      return <Room Key={room.id} room={room} />;
-    });
+
     return (
       <section className="featured-rooms">
-        <Title title="Featured Rooms"></Title>
+        <Title title="Cars"></Title>
         <div className="featured-rooms-center">
           {loading ? <Loading /> : rooms}
-        </div>
-        <Title title="Non Featured rooms" />
-        <div className="featured-rooms-center">
-          {loading ? <Loading /> : nonrooms}
         </div>
       </section>
     );

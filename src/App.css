@@ -364,6 +364,12 @@ h6 {
 .single-room {
   padding: 5rem 0 0 0;
 }
+.Form-midd {
+  text-emphasis: center;
+  display: inline-block;
+  color: black;
+  background-attachment: white;
+}
 .single-room-images {
   width: 80vw;
   margin: 0 auto;

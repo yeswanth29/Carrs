@@ -35,17 +35,16 @@ class SingleRoom extends Component {
       capacity,
       size,
       price,
-      extras,
-      breakfast,
+
       pets,
       images,
     } = room;
     return (
       <div>
-        <StyledHero img={images[0] || this.state.defaultBcg}>
+        <StyledHero img={images[0]}>
           <Banner title={`${name} room`}>
-            <Link to="/rooms" className="btn-primary">
-              Back to rooms
+            <Link to="/Cars" className="btn-primary">
+              Back to Cars
             </Link>
           </Banner>
         </StyledHero>
@@ -63,7 +62,7 @@ class SingleRoom extends Component {
             <article className="info">
               <h3>Info</h3>
               <h6>Price:${price}</h6>
-              <h6>size:${size}</h6>
+              <h6>size:{size}</h6>
             </article>
           </div>
         </section>
