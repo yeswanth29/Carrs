@@ -15,7 +15,7 @@ function Home() {
           </Link>
         
       </Hero>
-      <Service />
+      
       <FeaturedCars />
     </div>
   );
